@@ -7,7 +7,7 @@ import Feature from "./features/features";
 import List from "../list/List";
 import { Link } from "react-router-dom";
 import "./Home.css"
-import "./../bootstrap-5.2.0-beta1-dist/css/bootstrap.css";
+import "import "~/node_modules/bootstrap/dist/css/bootstrap.min.css"";
 const Home=(props)=>{
 
     return(
