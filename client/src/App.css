@@ -1,7 +1,13 @@
-body{
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Quintessential', 'cursive';
-  margin: 0;
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+body {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  font-family:Cairo, sans-serif;
+}
+a{
+  text-decoration: none;
+  color:#000;
 }

@@ -10,7 +10,7 @@ import "./Home.css"
 const Home=(props)=>{
 
     return(
-        <div className={`home ${props.color==false ? 'dark' : ''} row g-4 mb-4`}>
+        <div className={`home ${props.color===false ? 'dark' : ''} g-4 mb-4`}>
             
                 <Side_bar color={props.color} handel_color={props.handel_color} handel_side={props.handel_side}/>
 

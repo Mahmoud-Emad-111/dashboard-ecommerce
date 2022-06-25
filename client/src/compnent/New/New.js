@@ -5,7 +5,6 @@ import "./New.css";
 import { useEffect, useState } from "react";
 
 import avatar from "./avtart.jpg";
-import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 const New=()=>{
     const [file, setfile] = useState(false);
     const [type,settype]=useState("");

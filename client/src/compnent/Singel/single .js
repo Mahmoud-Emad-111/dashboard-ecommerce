@@ -5,7 +5,6 @@ import "./single.css"
 import img from "./ma.jpg";
 import Chart from "./../charts/chart"
 import List from "../list/List";
-import "../../../node_modules/font-awesome/css/font-awesome.min.css";
 const Single=(props)=>{
     return(
         <div className={`main_single row g-4 mb-4 ${props.color==false ? 'dark':''}`}>

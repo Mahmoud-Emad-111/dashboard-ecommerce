@@ -1,5 +1,5 @@
 import React from "react";
-import { Route,BrowserRouter,Router, Routes } from "react-router-dom";
+import { Route,BrowserRouter, Routes } from "react-router-dom";
 import Home from "./compnent/Home/Home";
 import New from "./compnent/New/New";
 import Single from "./compnent/Singel/single ";
@@ -7,6 +7,7 @@ import Users from "./compnent/users/users";
 import Product from "./compnent/product/product";
 import Order from "./compnent/order/order";
 import { useState } from "react";
+import './App.css';
 
 const App=()=>{
     const [color,Setcolor]=useState(true);
