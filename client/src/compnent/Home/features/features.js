@@ -2,7 +2,6 @@ import React from "react";
 import "./features.css";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import  "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const Feature=() =>{
     return(
         <div className="feature ">

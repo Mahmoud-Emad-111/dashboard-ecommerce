@@ -2,7 +2,6 @@ import React from "react";
 import "./chart.css";
 import  { PureComponent } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import  "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const data = [
     {
       name: 'january',

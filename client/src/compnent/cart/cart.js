@@ -1,6 +1,5 @@
 import React from "react";
 import "./cart.css"
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 const Cart=(props)=>{
     let data;
     switch (props.type) {
