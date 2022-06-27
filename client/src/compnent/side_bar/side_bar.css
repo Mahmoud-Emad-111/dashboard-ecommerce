@@ -49,7 +49,7 @@
 .side_bar li:hover{
     background-color: #ece8ff;
 }
-.side_bar ul i{
+.side_bar ul svg{
     color: var(--main_color);
     width: 20px;
 }
@@ -90,6 +90,7 @@
 }   
 .side_bar .hedaer a{
     color: var(--main_color);
+    
 
 }
 .side_bar .hedaer{
@@ -115,12 +116,11 @@ a{
     position: fixed
 }
 
-
 /* ////////////////////////////////////////// */
                 /* DARKMOOD */
 /* /////////////////////////////////////////// */
 .dark {
-    border-color: rgb(72, 72, 72);
+    border-color: rgb(72, 72, 72) !important;
     
 }
 .dark .hedaer a{

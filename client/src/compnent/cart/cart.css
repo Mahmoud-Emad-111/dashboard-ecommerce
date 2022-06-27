@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.widget .right  i:last-child{
+.widget .right  svg:last-child{
     align-items: flex-end;
 }
 .widget .title{
@@ -41,7 +41,9 @@
     color: green;
 }
 .widget .icone{
-    padding: 9px ;
+    width: 32px;
+    height: 34px;
+    padding: 5px ;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;

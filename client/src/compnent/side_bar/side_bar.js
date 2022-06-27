@@ -2,6 +2,17 @@ import React from "react";
 import "./side_bar.css";
 import {  Link } from "react-router-dom";
 import { useState } from "react";
+import {RiDashboardFill} from "react-icons/ri";
+import {FaUser,FaAddressCard,FaRegHandPaper} from "react-icons/fa";
+import {BsShop} from "react-icons/bs";
+import {ImTruck} from "react-icons/im";
+import {CgArrowsVAlt} from "react-icons/cg";
+import {IoNotifications} from "react-icons/io5";
+import {BsFillCloudArrowUpFill,BsGear} from "react-icons/bs";
+import {FiLogOut} from "react-icons/fi";
+
+
+
 const Side_bar=(props)=>{
 
     return(
@@ -15,56 +26,56 @@ const Side_bar=(props)=>{
             <ul>
                         <p>main</p>
                     <li>
-                        <i className="fa-solid fa-table-cells-large"></i>
+                        <RiDashboardFill/>
                         <span><Link to="/">dashboard</Link></span>
                     </li>
                         <p>lists</p>
                     <li>
-                        <i className="fa-solid fa-user"></i>
+                        <FaUser/>
                         <span><Link to="/user">user</Link></span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-shop"></i>
+                        <BsShop/>
                         <span><Link to="/product">product</Link></span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-address-card"></i>
+                        <FaAddressCard/>
                         <span><Link to="/order">order</Link></span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-truck"></i>
+                        <ImTruck/>
                         <span><Link to="/order">delevere</Link></span>
                     </li>
                         <p>useful</p>
                     <li>
-                        <i className="fa-solid fa-arrows-up-down"></i>
+                        <CgArrowsVAlt/>
                         <span>stats</span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-bell"></i>
+                        <IoNotifications/>
                         <span>notfications</span>
                     </li>
                         <p>service</p>
                     <li>
-                    <i className="fa-solid fa-cloud-arrow-down"></i>
+                    <BsFillCloudArrowUpFill/>
                         <span>system health</span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-hand-fist"></i>
+                        <FaRegHandPaper/>
                         <span>logs</span>
 
                     </li>
                     <li>
-                        <i className="fa-solid fa-gear"></i>    
+                        <BsGear/>    
                         <span>setings</span>
                     </li>
                         <p>user</p>
                     <li>
-                        <i className="fa-solid fa-user"></i>
+                        <FaUser/>
                         <span><Link to="/profile">profile</Link></span>
                     </li>
                     <li>
-                        <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                        <FiLogOut/>
                         <span>logout</span>
                     </li>
 

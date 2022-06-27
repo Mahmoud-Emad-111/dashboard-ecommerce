@@ -1,4 +1,9 @@
 import React from "react";
+import {AiOutlineUser} from "react-icons/ai";
+import {FaShoppingCart,FaWallet} from "react-icons/fa";
+import {RiMoneyDollarCircleFill} from "react-icons/ri";
+import {IoIosArrowUp} from "react-icons/io"; 
+
 import "./cart.css"
 const Cart=(props)=>{
     let data;
@@ -9,10 +14,8 @@ const Cart=(props)=>{
                 ismoney:false,
                 count:100,
                 link:"see all users",
-                icone:<i className="fa-regular fa-user icone" style={{
-                    color:"crimson",
-                    backgroundColor:"rgba(255,0,0,0.2)"
-                    }}></i>,
+                // 
+                icone:<AiOutlineUser color={"crimson"}  style={{backgroundColor:"rgba(255,0,0,0.2)"}} className="icone"/>,
             }
             break;
             case "orders":
@@ -21,10 +24,7 @@ const Cart=(props)=>{
                     ismoney:false,
                     count:109,
                     link:"view all orders",
-                    icone:<i className="fa-solid fa-cart-shopping icone " style={{
-                        color:"goldenrod",
-                        backgroundColor:"rgba(218,165,32,0.2)"
-                    }}></i>,
+                    icone:<FaShoppingCart style={{color:"goldenrod",backgroundColor:"rgba(218,165,32,0.2)"}} className="icone"/>
                     
                 }
             break;
@@ -34,10 +34,7 @@ const Cart=(props)=>{
                     ismoney:true,
                     count:652,
                     link:"view net earnings",
-                    icone:<i className="fa-solid fa-circle-dollar-to-slot icone" style={{
-                        color:"green",
-                        backgroundColor:"rgba(0,128,0,0.2)"
-                    }}></i>,
+                    icone:<RiMoneyDollarCircleFill style={{color:"green",backgroundColor:"rgba(0,128,0,0.2)"}} className="icone"/>,
                     
                 }
             break;
@@ -48,10 +45,7 @@ const Cart=(props)=>{
                     ismoney:true,
                     count:502,
                     link:"see detalis",
-                    icone:<i className="fa-solid fa-wallet icone" style={{
-                        color:"purple",
-                        backgroundColor:"rgba(128,0,128,0.2)"
-                    }}></i>,
+                    icone:<FaWallet style={{color:"purple",backgroundColor:"rgba(128,0,128,0.2)"}} className="icone"/>,
                     
                 }
             break;
@@ -68,7 +62,7 @@ const Cart=(props)=>{
                     <span className="detalis">{data.link}</span>
                 </div>
                 <div className="right">
-                    <span className="up"><i className="fa-solid fa-angle-up"></i> 20 %</span>
+                    <span className="up"><IoIosArrowUp/> 20 %</span>
                     <span>{data.icone}</span>
                 </div>
 

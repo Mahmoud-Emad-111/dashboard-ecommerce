@@ -7,7 +7,7 @@ import Chart from "./../charts/chart"
 import List from "../list/List";
 const Single=(props)=>{
     return(
-        <div className={`main_single row g-4 mb-4 ${props.color==false ? 'dark':''}`}>
+        <div className={`main_single row g-4  ${props.color==false ? 'dark':''}`}>
             
                 <Side color={props.color} handel_color={props.handel_color} handel_side={props.handel_side} />
             
@@ -23,7 +23,7 @@ const Single=(props)=>{
                                 </div>
                                 <div className="data">
                                     <h4>mahmoud emad</h4>
-                                    <p ><span>Emali:</span> mahmoud@gmali.com</p>
+                                    <p ><span>Emali:</span> mahmoud.devops@gmali.com</p>
                                     <p ><span>Phone:</span> 01220458853</p>
                                     <p ><span>Address:</span> Elsharqia/zgazig</p>
                                     <p ><span>Country:</span> EGYPT</p>

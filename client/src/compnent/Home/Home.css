@@ -1,6 +1,6 @@
 .home{
     display: flex;
-    margin-right: 0;
+    margin-right: 0 !important;
     
 }
 .home .contener_home{

@@ -2,6 +2,8 @@ import React from "react";
 import Nav from "./../nav_bar/Nav_bar";
 import Site from "./../side_bar/side_bar";
 import "./New.css";
+import {VscEye} from "react-icons/vsc";
+import {ImUpload} from "react-icons/im";
 import { useEffect, useState } from "react";
 
 import avatar from "./avtart.jpg";
@@ -27,7 +29,7 @@ const New=()=>{
                         <form>
                             <div className="form">
                                 <div className="input_form">
-                                    <label htmlFor="file"> image: <i className="fa-solid fa-upload"></i></label>
+                                    <label htmlFor="file" className="label_file"> image: <ImUpload className="upload"/></label>
                                     <input type="file"  id="file" onChange={e=>setfile(e.target.files[0])} style={{display:"none"}}/>
                                 </div>
                                 <div className="input_form">
@@ -49,7 +51,7 @@ const New=()=>{
                                 <div className="input_form password">
                                     <label>Password</label>
                                     <input type={type==true ? 'text': "password" }  placeholder="Password" id="password"/>
-                                    <i class="fa-regular fa-eye" onClick={handel_password}></i>
+                                    <VscEye onClick={handel_password} className="eye_password"/>
                                 </div>
                                 <div className="input_form">
                                     <label>Address</label>

@@ -2,12 +2,15 @@
     width: 100%;
     display: flex;
     text-transform: capitalize;
+
 }
 .new .site{
     flex:1 ;
 }
 .new .contener{
     flex: 5;
+    margin-top: -13px;
+
 }
 .new .top, .bottom{
     padding: 10px;
@@ -21,8 +24,24 @@
 .new .bottom {
     display: flex;
     align-items: center;
+    padding-bottom: 2rem;
+    margin-top: -1.2rem;
 
 }
+/* ///////////////////////////////////////// */
+@media (max-width:880px) {
+    .new .bottom{
+        flex-direction: column;
+    }
+    .new .left img{
+        margin-bottom: 2rem;
+        width: 100px !important; 
+        height: 100px !important;
+    }
+}
+
+/* ///////////////////////////////////////// */
+
 .new .bottom .left{
     flex: 1;
     text-align: center;
@@ -56,9 +75,17 @@
     border-bottom: solid 1px #ccc;
     outline: none;
 }
-.new .form .input_form i{
-    font-size: 25px;
-    margin-top: 20px;
+.new .label_file{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+.new .form .input_form .upload{
+    position: absolute;
+    top: 20%;
+    right: -2rem;
+    font-size: 20px;
+    
 }
 .new .form button{
     width: 150px;
@@ -72,9 +99,32 @@
 .password{
     position: relative;
 }
-.password i{
-        
+.password .eye_password{
+    font-size: 20px;
     position: absolute;
-    top: 15px;
+    top: 1.5rem;
     right: 5px;
 }
+.new .left img{
+    max-width: 200px !important;
+    max-height: 200px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* /////////////////////////////////////////////// */
+    @media (max-width:560px) {
+        .new .form{
+            flex-direction: column;
+            align-items: center;
+        }
+        .new .form .input_form{
+            max-width: 250px;
+            width: 100%;
+        }
+
+    }
+/* /////////////////////////////////////////////// */

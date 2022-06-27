@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "./../nav_bar/Nav_bar";
 import Site from "./../side_bar/side_bar";
 import avatar from "./avtart.jpg";
+import {ImUpload} from "react-icons/im";
 const Product=(props)=>{
     const [file, setfile] = useState("");
 
@@ -23,7 +24,7 @@ const Product=(props)=>{
                         <form>
                             <div className="form">
                                 <div className="input_form">
-                                    <label htmlFor="file"> image: <i className="fa-solid fa-upload"></i></label>
+                                    <label htmlFor="file"> image: <ImUpload className="upload"/></label>
                                     <input type="file"  id="file" onChange={e=>setfile(e.target.files[0])} style={{display:"none"}}/>
                                 </div>
                                 <div className="input_form">
@@ -42,13 +43,11 @@ const Product=(props)=>{
                                     <label>Price</label>
                                     <input type="text"  placeholder="Price"/>
                                 </div>
-                               
                                 <div className="input_form">
                                     <label>Stock</label>
                                     <input type="text"  placeholder="Stock"/>
                                 </div>
                                 <button>sent</button>
-
                             </div>
                         </form>
                     </div>

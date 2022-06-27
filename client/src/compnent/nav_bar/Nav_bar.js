@@ -2,6 +2,12 @@ import React from "react";
 import "./Nav_bar.css";
 import me from "./ma.jpg";
 import {  Link } from "react-router-dom";
+import { BsMoon } from "react-icons/bs";
+import { FiGlobe,FiMinimize,FiMessageSquare} from "react-icons/fi";
+import { FaBars,FaRegBell} from "react-icons/fa";
+import {BiBell} from "react-icons/bi";
+
+
 
 const Nav_bar=(props)=>{
     
@@ -12,21 +18,21 @@ const Nav_bar=(props)=>{
                         
                     <div className="right">
                         
-                            
-                            <i className="fa-solid fa-bars" onClick={props.handel_side}></i>
+                            <FaBars onClick={props.handel_side} size={'22'}/>
+                            <i className="fa-solid fa-bars" ></i>
                                     
 
                     </div>
                 <div className="option">
                     <ul>
                         <li className="lan">
-                            <i className="fa-solid fa-globe"></i>
+                            <FiGlobe size={'20px'}/>
                             <span>english</span>
                         </li>
-                        <li onClick={props.handel_color}><i className="fa-regular fa-moon"></i></li>
-                        <li><i className="fa-solid fa-minimize"></i></li>
-                        <li><i className="fa-regular fa-bell"></i></li>
-                        <li><i className="fa-regular fa-message"></i></li>
+                        <li onClick={props.handel_color}><BsMoon size={'20px'}/></li>
+                        <li><FiMinimize  size={'22px'}/></li>
+                        <li><FaRegBell size={"22px"}/></li>
+                        <li><FiMessageSquare size={"22px"}/></li>
                         <li><Link to="/profile"><img src={me} alt=""/></Link></li>
                     </ul>
                 </div>
