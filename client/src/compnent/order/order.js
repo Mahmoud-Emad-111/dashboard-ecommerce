@@ -6,7 +6,7 @@ import List from "../list/List";
 
 const Order=(props)=>{
     return(
-        <div className={`order ${props.color ==false ? 'dark' :''}`}>
+        <div className={`order  row g-4  ${props.color ==false ? 'dark' :''}`}>
             
                 <Side_bar color={props.color} handel_color={props.handel_color} handel_side={props.handel_side}/>
             

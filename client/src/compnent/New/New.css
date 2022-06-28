@@ -2,14 +2,13 @@
     width: 100%;
     display: flex;
     text-transform: capitalize;
-
 }
 .new .site{
     flex:1 ;
 }
 .new .contener{
     flex: 5;
-    margin-top: -13px;
+    
 
 }
 .new .top, .bottom{

@@ -13,3 +13,6 @@ a{
 svg{
   cursor: pointer;
 }
+.dark{
+  background-color: #111 !important;
+}

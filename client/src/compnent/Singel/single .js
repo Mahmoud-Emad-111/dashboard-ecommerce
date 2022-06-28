@@ -6,6 +6,7 @@ import img from "./ma.jpg";
 import Chart from "./../charts/chart"
 import List from "../list/List";
 const Single=(props)=>{
+    console.log(props)
     return(
         <div className={`main_single row g-4  ${props.color==false ? 'dark':''}`}>
             
@@ -23,7 +24,7 @@ const Single=(props)=>{
                                 </div>
                                 <div className="data">
                                     <h4>mahmoud emad</h4>
-                                    <p ><span>Emali:</span> mahmoud.devops@gmali.com</p>
+                                    <p ><span>Emali:</span> <span className="my_gmail">mahmoud.devops@gmali.com</span></p>
                                     <p ><span>Phone:</span> 01220458853</p>
                                     <p ><span>Address:</span> Elsharqia/zgazig</p>
                                     <p ><span>Country:</span> EGYPT</p>

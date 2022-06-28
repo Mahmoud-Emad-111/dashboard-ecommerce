@@ -26,7 +26,7 @@
 /* /////////////////////////////////////////// */
     @media (max-width:456px) {
         .nav .option ul{
-            gap: 19px !important;
+            gap: 22px !important;
         }
     }
     @media (max-width:413px) {
@@ -150,4 +150,13 @@
     .contener_nav{
         justify-content: space-between;
     }
+}
+@media (max-width:402px){
+    .nav .min_screen{
+        display:none;
+    }
+    .nav ul{
+        gap: 22px !important;
+    }
+
 }

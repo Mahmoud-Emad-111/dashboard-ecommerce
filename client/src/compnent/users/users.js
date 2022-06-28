@@ -66,14 +66,14 @@ const columns = [
     }
 ];
     return(
-        <div className={`main_users ${props.color==false ? 'dark' : ''}`}>
+        <div className={`main_users ${props.color==false ? 'dark' : ''}`} id="body">
             
                 <Side_bar color={props.color}  handel_color={props.handel_color} handel_side={props.handel_side}/>
             
-            <div className="nav contener" id="body"> 
+            <div className="nav contener user_list_" id="body"> 
                 <Nav_bar color={props.color} handel_color={props.handel_color} handel_side={props.handel_side}/>
-                <div className="table" id="body">
-                    <div className="new">
+                <div className={`table ${props.color==false ? 'dark' : ''}`} id="body">
+                    <div className="add_new_user">
                         <span className="title">add new user</span>
                         <span><Link to="/new">add new</Link></span>
                     </div>

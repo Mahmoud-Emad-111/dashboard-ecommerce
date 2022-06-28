@@ -1,5 +1,6 @@
 import React from "react";
 import "./features.css";
+import {IoMdArrowDropdown,IoIosArrowDown,IoIosArrowUp} from "react-icons/io";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 const Feature=() =>{
@@ -7,7 +8,7 @@ const Feature=() =>{
         <div className="feature ">
             <div className="top">
                 <h3>total revenue</h3>
-                <span><i class="fa-solid fa-caret-down"></i></span>
+                <span><IoMdArrowDropdown size={'25px'}/></span>
             </div>
             <div className="bottom">
                 <div className="feature-ch">
@@ -21,15 +22,15 @@ const Feature=() =>{
                 <div className="Planning">
                         <div>
                             <span>target</span>
-                            <span className="negtive"><i class="fa-solid fa-angle-down" ></i> $12.4k</span>
+                            <span className="negtive"><IoIosArrowUp color={"green"}/> $12.4k</span>
                         </div>
                         <div>
                             <span>last week</span>
-                            <span className="postive"><i class="fa-solid fa-angle-up " ></i> $16.7k</span>
+                            <span className="postive"><IoIosArrowDown color={"red"}/> $16.7k</span>
                         </div>
                         <div>
                             <span>last month</span>
-                            <span className="postive"><i class="fa-solid fa-angle-up postive" ></i> $9.9k</span>
+                            <span className="postive"><IoIosArrowDown color={"red"}/> $9.9k</span>
                         </div>
                 </div>
             </div>

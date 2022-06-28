@@ -19,7 +19,7 @@ const Nav_bar=(props)=>{
                     <div className="right">
                         
                             <FaBars onClick={props.handel_side} size={'22'}/>
-                            <i className="fa-solid fa-bars" ></i>
+                            
                                     
 
                     </div>
@@ -30,7 +30,7 @@ const Nav_bar=(props)=>{
                             <span>english</span>
                         </li>
                         <li onClick={props.handel_color}><BsMoon size={'20px'}/></li>
-                        <li><FiMinimize  size={'22px'}/></li>
+                        <li className="min_screen"><FiMinimize  size={'22px'} /></li>
                         <li><FaRegBell size={"22px"}/></li>
                         <li><FiMessageSquare size={"22px"}/></li>
                         <li><Link to="/profile"><img src={me} alt=""/></Link></li>

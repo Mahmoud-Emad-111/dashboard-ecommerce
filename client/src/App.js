@@ -19,15 +19,12 @@ const App=()=>{
         const body=document.getElementById('body');
         const s= document.getElementById('side_bar');
         const close=document.getElementById('close')
-       
        if(side==true){
-           console.log(true);
             s.style='display: block;width:250px;backgroundColor:red;position: fixed';
             body.classList.add('body_active');
             close.style='display: block';
        }
        else{
-           console.log(false);
             s.style='display: none';
             body.classList.remove('body_active')
             close.style='display: block';
@@ -42,7 +39,7 @@ const App=()=>{
                     <Route path="/" exact element={<Home color={color} handel_color={handel_color} side={side} handel_side={handel_side}/>}/>
                     <Route path="/user" element={<Users color={color} handel_color={handel_color} handel_side={handel_side}/>}/>
                     <Route path="/profile" element={<Single color={color} handel_color={handel_color} handel_side={handel_side}/>}/>
-                    <Route path="new" element={<New color={color} handel_color={handel_color}/>} handel_side={handel_side}/>
+                    <Route path="new" element={<New color={color} handel_color={handel_color}  handel_side={handel_side}/>}/>
                     <Route path="/product" element={<Product color={color} handel_color={handel_color} handel_side={handel_side}/>}/>
                     <Route path="/order" element={<Order color={color} handel_color={handel_color} handel_side={handel_side}/>}></Route>
                     

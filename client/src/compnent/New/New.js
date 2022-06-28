@@ -7,17 +7,17 @@ import {ImUpload} from "react-icons/im";
 import { useEffect, useState } from "react";
 
 import avatar from "./avtart.jpg";
-const New=()=>{
+const New=(props)=>{
     const [file, setfile] = useState(false);
     const [type,settype]=useState("");
     const handel_password=()=>{
         settype(!type)
     }
     return(
-        <div className="new">
-            <div className="site"><Site/></div>
-            <div className="contener">
-                <Nav/>
+        <div className={`new ${props.color ==false ? 'dark' :''}`}>
+            <Site color={props.color} handel_color={props.handel_color} handel_side={props.handel_side}/>
+            <div className="contener" id="body">
+                <Nav color={props.color} handel_color={props.handel_color} handel_side={props.handel_side}/>
                 <div className="top">
                     <h1>add new user</h1>
                 </div>

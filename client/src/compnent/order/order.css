@@ -1,5 +1,7 @@
 .order{
     display: flex;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 .order .side{
     flex: 1;
